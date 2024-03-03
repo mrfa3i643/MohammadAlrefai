@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>155089</title>
+  <meta name="description" content="simple CV example created with HTML and CSS">
+  <meta name="author" content="mrfa3i">
+  <link rel="icon" href="./img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway';
+      font-size: 16px;
+      line-height: 1.8em;
+    }
+
+    a {
+      color: #1C9C94;
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: 0.5;
+    }
+
+    article {
+      padding: 0 1em;
+    }
+
+    section {
+      margin: 1em;
+      padding: 1em;
+    }
+
+    header, main, footer {
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 2em;
+      text-align: center;
+      background-image: url('./img/bg.jpg');
+      background-size: cover;
+      background-position: fixed;
+      color: white;
+    }
+
+    header section {
+      margin: 0 auto;
+      max-width: 640px;
+    }
+
+    header img {
+      border-radius: 50%;
+      max-width: 150px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      margin: 1em 0;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    h3, h4 {
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1140px;
+    }
+
+    main section:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .fab {
+      border: 1px solid white;
+      border-radius: 50%;
+      font-size: 1.5em;
+      width: 1.5em;
+      height: 1.5em;
+      line-height: 1.5em;
+      margin: 5px;
+      text-align: center;
+    }
+
+    a .fab {
+      color: white;
+    }
+
+    .course, .skills {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    .course .title {
+      color: #509e98;
+      -ms-flex: 0 0 33.3%;
+      flex: 0 0 33.3%;
+      max-width: 33%;
+    }
+
+    .course .descrition {
+      -ms-flex: 0 0 66.6%;
+      flex: 0 0 66.6%;
+      max-width: 66.6%;
+    }
+
+    .course .descrition p {
+      padding-left: 1em;
+    }
+
+    .skills .column {
+      -ms-flex: 0 0 50%%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .skills .column ul, ul.job-description {
+      list-style-type: none;
+    }
+
+    .skills .column ul > li:before {
+      content: "►";
+      padding-right: 0.5em;
+      color: #509e98;
+    }
+
+    .university, .job-title {
+      text-transform: capitalize;
+    }
+
+    .university span, .job-title span {
+      color: #889499;
+      text-decoration: underline;
+    }
+
+    ul.job-description li:before{
+      content: "✔";
+      padding-right: 0.5em;
+      color: #509e98;
+    }
+
+    footer {
+     padding: 1em 1.5em;
+     background: #A7B8BF;
+     color: white;
+     text-align: right;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .course {
+        display: block;
+      }
+
+      .course .title, .course .descrition {
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .skills {
+        display: block;
+      }
+
+      .skills .column {
+        max-width: 100%;
+      }
+
+      footer {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+    <div>
+      <img src="./img/avatar.jpg" />
+    </div>
+    <h1>Mohammad Alrefai</h1>
+    <section>
+      <p>Dynamic and proficient cybersecurity professional specializing in digital forensics incident response, and reverse engineering. With two years of hands-on experience, adept at identifying, analyzing, and mitigating complex security incidents to minimize organizational risk. Skilled in conducting forensic investigations, extracting and analyzing digital evidence, and providing expert testimony. Proficient in reverse engineering malware.CTF expert . Proven track record of collaborating with cross-functional teams to swiftly respond to security breaches and restore system integrity. Committed to continuous learning and staying abreast of cutting-edge techniques in digital forensics and reverse engineering to combat evolving cyber threats effectively.</p>
+
+      <a href="https://twitter.com/Rfa3iM" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/mrfa3i643" target="_blank">
+        <i class="fab fa-github-alt"></i>
+      </a>
+      <a href="https://www.instagram.com/mrfa3i/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mohammad-alrefai-a1602122a/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </section>
+  </header>
+  <main>
+    <section>
+
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <div class='skills'>
+        <div class='column'>
+          <h4>Good knowledge</h4>
+          <ul>
+            <li>Operating Systems<ol>Windows , Linux</ol></li>
+            <li>Digital Forensics<ol>Forensic Imaging and Analysis, Memory Forensics, Network Forensics, Mobile Forensics , Incident Response, Threat Hunting .</ol></li>
+            <li>Malware Analysis</li>
+			<li>Reverse Engineering<ol>Windows , Linux ,Android Mobile applications .</ol></li>
+            <li>OSINT<ol>and Reconnaissance, Threat Intelligence .</ol></li>
+			<li>Junior Penetration Tester<ol>Linux privilege escalation, Ports Handling , OWASP Top 10 Vulnerabilities .</ol></li>
+			<li>Communication skill</li>
+			<li>Programming<ol>with Python and C++ , C and Bash .</ol></li>
+          </ul>
+        </div>
+
+        <div class='column'>
+          <h4>Currently Learning</h4>
+          <ul>
+            <li>Mobile Penetration Testing</li>
+ 
+          </ul>
+		  <section></section>
+        </div>
+		
+        <div>
+		
+          <h4>Languages</h4>
+          <div class='column'>
+			<ul>
+				<li>Arabic</li>
+				<li>English</li>
+			</ul>
+		</div>
+          
+      
+        
+      </div>
+    </section>
+	
+    <section>
+      <h3>Education</h3>
+      <article>
+        <div class='university'>
+          <span>2021-2025</span> <strong>Bachelor of Cybersecurity</strong>
+        </div>
+        <div class="descrition">
+          Jordan University of Science and Technology
+        </div>
+      </article>
+
+    </section>
+    <section>   
+  </main>
+  <footer>
+    <p>Created by: <a>@mrfa3i</a> / <a href = "mailto: refaim643@gmail.com">Contact-me</a>  / <a href="https://www.linkedin.com/in/mohammad-alrefai-a1602122a/">LinkedIn</a> / 2024 </p>
+  </footer>
+</body>
+</html>
